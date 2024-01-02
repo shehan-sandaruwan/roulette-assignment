@@ -1,0 +1,27 @@
+@mixin typogrphy-1 {
+  color: #fff;
+  font-family: Proxima Nova;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.4375rem; /* 164.286% */
+}
+
+@mixin typogrphy-2 {
+  color: #fff;
+  font-family: Proxima Nova;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.1875rem; /* 175% */
+  text-transform: uppercase;
+}
+
+@mixin typography-3 {
+  color: #576a78;
+  font-family: Proxima Nova;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

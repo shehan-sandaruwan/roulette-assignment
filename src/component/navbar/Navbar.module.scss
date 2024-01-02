@@ -1,0 +1,94 @@
+@import "../../mixins.scss";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 4.5rem;
+  border-bottom: 1px solid #18262f;
+  background: #121c23;
+  padding: 0 2.5rem;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  width: 7.16019rem;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.midleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.125rem;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #222c39;
+  background: #0e131b;
+}
+
+.midleContainer select {
+  background: #0e131b;
+  border: none;
+  @include typogrphy-1;
+}
+
+.solanaIcon {
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.frameicon {
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.625rem;
+  border: 1px solid #2cf078;
+  background: linear-gradient(180deg, #12cb70 19.23%, #09ac85 121.81%), #00c74d;
+}
+
+.profile {
+  display: flex;
+  padding: 0.125rem 0.125rem 0.125rem 1rem;
+  align-items: center;
+  gap: 0.875rem;
+  border-radius: 0.75rem;
+  border: 1px solid #222c39;
+}
+
+.profile span {
+  @include typogrphy-1;
+}
+.search,
+.message,
+.notification {
+  display: flex;
+  padding: 0.625rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--2, #222c39);
+}
