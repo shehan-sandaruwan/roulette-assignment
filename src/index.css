@@ -1,5 +1,16 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf")
+      format("woff2"),
+    /* Adjust the file format and path accordingly */
+      url("./assets/fonts/Montserrat-VariableFont_wght.ttf") format("woff");
+  /* Include additional font formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  font-family: Proxima Nova;
+  font-family: "Montserrat", sans-serif;
 
   line-height: 1.5;
   font-weight: 400;
@@ -27,7 +38,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-height: 100vh;
+  max-width: 1440px;
   background: #0e131b;
 }
 

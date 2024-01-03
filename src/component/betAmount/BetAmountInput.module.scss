@@ -1,0 +1,36 @@
+@import "../../mixins.scss";
+
+.betInputContainer {
+  display: flex;
+  padding: 0.625rem 1rem;
+  align-items: center;
+  gap: 0.9375rem;
+  border-radius: 1.25rem;
+  border: 1px solid var(--2, #222c39);
+  background: var(--0, #0e131b);
+  margin-top: 1.06rem;
+}
+
+.betActionList {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.betActionList span {
+  display: flex;
+  padding: 0.125rem 0.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  @include typography-5;
+  border-radius: 0.625rem;
+  background: #222c39;
+}
+
+.betInputContainer input[type="number"] {
+  border: none;
+  background: var(--0, #0e131b);
+  @include typography-5;
+  text-transform: capitalize;
+}

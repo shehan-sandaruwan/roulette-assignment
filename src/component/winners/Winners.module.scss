@@ -1,0 +1,63 @@
+@import "../../mixins.scss";
+.categoryContainer {
+  display: flex;
+  padding: 0.75rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 1.5rem;
+  border: 1px solid #243742;
+  background: #12181d;
+}
+
+.categoryContainer table th,
+tr,
+td {
+  @include typography-3;
+}
+
+.leftItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.leftItems > span {
+  @include typography-6;
+}
+
+.rightItems {
+  @include typography-4;
+}
+
+.winnerstableContainer {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  gap: 0.5625rem;
+  align-self: stretch;
+  border-radius: 0.75rem;
+  border: 1px solid #243742;
+  background: #1c2932;
+}
+
+.winnersWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 30%;
+}
+
+.leftTableData {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.tableHRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.25rem;
+  text-align: right;
+}

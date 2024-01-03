@@ -25,3 +25,34 @@
   font-weight: 700;
   line-height: normal;
 }
+
+@mixin typography-4 {
+  color: #576a78;
+  font-family: Proxima Nova;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@mixin typography-5 {
+  color: #8694b6;
+  text-align: center;
+  font-family: Proxima Nova;
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1rem; /* 160% */
+  text-transform: uppercase;
+}
+
+@mixin typography-6 {
+  color: #d3e0e9;
+  font-family: Proxima Nova;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}

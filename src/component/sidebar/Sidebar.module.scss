@@ -1,13 +1,7 @@
 @import "../../mixins.scss";
 
 .container {
-  width: 15.3125rem;
-  height: calc(100vh - 4.5rem);
   flex-shrink: 0;
-  border-right: 1px solid #18262f;
-  background: #121c23;
-  padding: 1.87rem 5.31rem 0 2.5rem;
-  box-sizing: border-box;
 }
 
 .topMenu,
@@ -22,6 +16,25 @@
   display: flex;
   align-items: center;
   gap: 0.875rem;
+  height: 1.5rem;
+  padding: 0.75rem 2.5rem;
+  box-sizing: border-box;
+}
+
+.menuItemContainer:hover {
+  cursor: pointer;
+  border-left: 1px solid #01fe86;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 134, 0.08) 0%,
+    rgba(0, 255, 134, 0) 100%
+  );
+}
+
+.menuItemContainer:hover > span,
+img {
+  color: #01fe86;
+  fill: #01fe86;
 }
 
 .devider {
@@ -37,4 +50,12 @@
 
 .menuItemContainer span {
   @include typogrphy-1;
+}
+
+.sidebarFooter {
+  display: flex;
+  gap: 1.69rem;
+  position: absolute;
+  bottom: 2.39rem;
+  padding: 0.75rem 2.5rem;
 }

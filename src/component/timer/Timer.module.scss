@@ -1,0 +1,20 @@
+@import "../../mixins.scss";
+.timerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.125rem;
+  position: absolute;
+  left: 50%;
+  z-index: 15;
+  bottom: 1.5rem;
+}
+
+.timerContainer span {
+  @include typogrphy-2;
+}
+
+.timerContainer div {
+  @include typogrphy-2;
+  font-size: 2.5rem;
+}

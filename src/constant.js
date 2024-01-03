@@ -52,3 +52,85 @@ export const MenuItemListBottom = [
     key: 8,
   },
 ];
+
+export const betInputActionList = [
+  {
+    name: "Clear",
+    key: "a-1",
+  },
+  {
+    name: "+0.01",
+    key: "a-2",
+  },
+  {
+    name: "+0.1",
+    key: "a-3",
+  },
+  {
+    name: "+0.1",
+    key: "a-4",
+  },
+  {
+    name: "+0.1",
+    key: "a-5",
+  },
+  {
+    name: "+0.1",
+    key: "a-6",
+  },
+  {
+    name: "+0.1",
+    key: "a-7",
+  },
+  {
+    name: "+0.1",
+    key: "a-8",
+  },
+  {
+    name: "Max",
+    key: "a-9",
+  },
+];
+
+export const winnersList = [
+  {
+    name: "FenRik",
+    value: "40.00",
+    key: "t-1",
+  },
+  {
+    name: "FenRik",
+    value: "40.00",
+    key: "t-2",
+  },
+  {
+    name: "FenRik",
+    value: "40.00",
+    key: "t-3",
+  },
+  {
+    name: "FenRik",
+    value: "40.00",
+    key: "t-4",
+  },
+  {
+    name: "FenRik",
+    value: "40.00",
+    key: "t-5",
+  },
+  {
+    name: "FenRik",
+    value: "40.00",
+    key: "t-6",
+  },
+  {
+    name: "FenRik",
+    value: "40.00",
+    key: "t-7",
+  },
+  {
+    name: "FenRik",
+    value: "40.00",
+    key: "t-8",
+  },
+];

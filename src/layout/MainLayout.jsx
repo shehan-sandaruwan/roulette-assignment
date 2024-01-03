@@ -5,13 +5,13 @@ import Sidebar from "../component/sidebar/Sidebar";
 const MainLayout = (props) => {
   return (
     <div className="wrapper">
-      <main>
-        <Navbar />
+      <Navbar />
+      <div className="page-body-content">
+        <aside>
+          <Sidebar />
+        </aside>
         <div className="game-board-container">{props.children}</div>
-      </main>
-      <aside>
-        <Sidebar />
-      </aside>
+      </div>
     </div>
   );
 };

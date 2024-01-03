@@ -5,12 +5,13 @@
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
-  height: 44.4375rem;
   flex-shrink: 0;
   border-radius: 0.75rem;
   border: 1px solid #18262f;
   background: #121c23;
   width: 100%;
+  box-sizing: border-box;
+  padding: 1.75rem;
 }
 
 .header {
@@ -36,16 +37,125 @@
   @include typography-3;
 }
 
+.gradientOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #121c23 10%,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    #121c23
+  );
+  pointer-events: none; /* Allows interactions with the coins beneath */
+}
+
+.gradientOverlaySmallCoins {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #121c23, rgba(0, 0, 0, 0));
+  pointer-events: none; /* Allows interactions with the coins beneath */
+}
+
 .coins {
+  position: relative;
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-top: 3.1rem;
+  height: 5.75rem;
+  flex-shrink: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.coins > img {
+  width: 3.71769rem;
   height: 3.75rem;
   flex-shrink: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(217, 217, 217, 0) 6.77%,
-    #d9d9d9 50%,
-    rgba(217, 217, 217, 0) 94.79%
-  );
+}
+
+.previouse {
+  width: 45rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.6rem;
+}
+
+.previouse > span {
+  @include typography-4;
+}
+.smallCoins {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.smallCoins > span {
+  @include typography-4;
+  z-index: 10;
+}
+
+.smallCoins > img {
+  width: 1.48706rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+}
+
+.lastStats ul {
+  list-style-type: none;
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use flexbox for horizontal layout */
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  @include typogrphy-1;
+}
+
+.lastStats ul li {
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.lastStats ul li:first-child {
+  background-image: url("../../assets/Coin\ 4.svg");
+}
+
+.lastStats ul li:nth-child(2) {
+  background-image: url("../../assets/Coin\ 5.svg");
+}
+
+.lastStats ul li:nth-child(3) {
+  background-image: url("../../assets/Coin\ 3.svg");
+}
+
+.winnersDetails {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  flex: 1 25%;
+  padding: 0 4rem;
+  box-sizing: border-box;
+  margin-top: 3.38rem;
+}
+
+.coinsContainer {
+  width: calc(100vw - 25rem);
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
 }
